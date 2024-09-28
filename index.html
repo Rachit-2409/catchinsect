@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insect Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div id="container">
+    <h1>Catch The Insect</h1>
+    <button id="start">Start Game</button>
+</div>
+
+<div id="insect_container">
+        <h2>What is your "favorite" insect?</h2>
+        <ul class="insect_box">
+        <button class="insect_btn" onclick="insect_generation('fly')"> 
+            <li class="insect" id="fly">
+                <p>fly</p>
+                <img src="http://pngimg.com/uploads/fly/fly_PNG3946.png" alt="">
+            </li>
+        </button>
+       <button class="insect_btn" onclick="insect_generation('mosquito')"> 
+            <li class="insect" id="mosquito">
+                <p>mosquito</p>
+                <img src="http://pngimg.com/uploads/mosquito/mosquito_PNG18175.png" alt="">
+            </li>
+        </button>
+        <button class="insect_btn" onclick="insect_generation('Spider')" > 
+            <li class="insect" id="spider">
+                <p>Spider</p>
+                <img src="http://pngimg.com/uploads/spider/spider_PNG12.png" alt="">
+            </li>
+        </button> 
+          <button class="insect_btn"  onclick="insect_generation('Roach')"> 
+            <li class="insect" id="roach">
+                <p>Roach</p>
+                <img src="http://pngimg.com/uploads/roach/roach_PNG12163.png" alt="">
+            </li>
+        </button> 
+        </ul>
+</div>
+
+<div id="playground">
+<h3 id="time" class="time">Time - 00:00 </h3>
+<h3 id="score" class="score">Score - 00 </h3>
+<h2 id="Message" class="Message"> Bs kar bhai Ab kuch kaam kar le!!!!</h2>
+</div>
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
